@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" 
+      rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
+
   <body>
     <header>
       <div class="container">
-        <div class="logo"><i class="fa-solid fa-bread-slice"></i> Sweet Delights</div>
+        <div class="logo">
+          <i class="fa-solid fa-bread-slice"></i> Sweet Delights
+        </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="mobile-menu-btn">☰</label>
         <nav>
@@ -30,21 +35,49 @@
       </div>
     </header>
 
-    
     <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1>Freshly Baked Happiness Every Day</h1>
-            <p>Artisanal baked goods made with love and the finest ingredients</p>
-            <a href="#products" class="btn cta-btn"><i class="fa-solid fa-cookie-bite"></i> Explore Our Menu</a>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Freshly Baked Happiness Every Day</h1>
+          <p>Artisanal baked goods made with love and the finest ingredients</p>
+          <a href="#products" class="btn cta-btn">
+            <i class="fa-solid fa-cookie-bite"></i> Explore Our Menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>
+          <i class="fa-solid fa-book"></i> Our Story
+        </h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/cookies.jpg" alt="Artisan bread with wheat and flour" class="rounded-image">
+          </div>
+          <div class="about-text">
+            <p>
+              Sweet Delights Bakery opened its doors in 2010 with a simple mission: to create delicious, handcrafted
+              pastries that bring joy to our community.
+            </p>
+            <p>
+              Our master bakers blend traditional techniques with innovative flavors to create unique treats that keep our
+              customers coming back for more.
+            </p>
+            <a href="#contact" class="btn">
+              <i class="fa-solid fa-shop"></i> Visit Us Today
+            </a>
           </div>
         </div>
-      </section>
-    
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <p>&copy; 2025 Sweet Delights Bakery. All rights reserved.</p>
       </div>
     </footer>
+
   </body>
 </html>
