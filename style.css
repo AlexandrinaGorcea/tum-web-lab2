@@ -16,15 +16,15 @@
   html {
     scroll-behavior: smooth;
   }
-
-body {
+  
+  body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--light-color);
   }
-
-.container {
+  
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,7 +40,6 @@ body {
     margin-bottom: 1rem;
   }
   
-
   h2 {
     font-size: 2.2rem;
     margin-bottom: 2rem;
@@ -48,7 +47,7 @@ body {
     position: relative;
     padding-bottom: 0.5rem;
   }
-
+  
   h2::after {
     content: '';
     position: absolute;
@@ -82,7 +81,7 @@ body {
   section {
     padding: 5rem 0;
   }
-
+  
   .btn {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -111,7 +110,7 @@ body {
     font-size: 1.1rem;
   }
   
-/* Header */
+  /* Header */
   header {
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -119,14 +118,14 @@ body {
     top: 0;
     z-index: 100;
   }
-
+  
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 20px;
   }
-
+  
   .logo {
     font-family: var(--font-heading);
     font-size: 1.8rem;
@@ -153,7 +152,7 @@ body {
   nav li {
     margin-left: 2rem;
   }
-
+  
   nav a {
     color: var(--dark-color);
     text-decoration: none;
@@ -163,7 +162,6 @@ body {
     position: relative;
   }
   
-
   nav a::after {
     content: '';
     position: absolute;
@@ -182,7 +180,7 @@ body {
   nav a:hover::after {
     width: 100%;
   }
-
+  
   .mobile-menu-btn {
     display: none;
     background: none;
@@ -191,8 +189,8 @@ body {
     cursor: pointer;
     color: var(--dark-color);
   }
-
-/* Hero Section */
+  
+  /* Hero Section */
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/bread-wheat.jpg') no-repeat center center;
     background-size: cover;
@@ -205,14 +203,14 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-
+  
   .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-
+  
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -238,8 +236,7 @@ body {
   .about-text {
     flex: 1;
   }
-
-
+  
   .image-placeholder {
     width: 100%;
     height: 400px;
@@ -249,7 +246,7 @@ body {
     background-position: center;
     overflow: hidden;
   }
-
+  
   .rounded-image {
     width: 100%;
     height: auto;
@@ -257,8 +254,7 @@ body {
     box-shadow: var(--box-shadow);
   }
   
-
-/* Products Section */
+  /* Products Section */
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -439,4 +435,147 @@ body {
   
   textarea {
     resize: vertical;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0 1rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer .logo {
+    color: white;
+  }
+  
+  .social-links a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a i {
+    margin-right: 5px;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .product-card, .testimonial-card, .about-content, .hero-content {
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    .about-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    /* CSS-only mobile menu */
+    nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* When checkbox is checked, show the menu */
+    .menu-toggle:checked ~ nav {
+      max-height: 300px; /* Adjust as needed */
+    }
+    
+    nav ul {
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+    
+    nav li {
+      margin: 0;
+      text-align: center;
+      padding: 0.8rem 0;
+    }
+    
+    .hero {
+      padding: 7rem 0;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-links a {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+    }
+    
+    section {
+      padding: 3rem 0;
+    }
+    
+    .hero {
+      padding: 5rem 0;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
   }
