@@ -42,14 +42,23 @@ The footer contains the logo, social media links, and copyright information, pro
 ### Landing Page
 The landing page was made fully responsive, ensuring a seamless experience across both desktop and mobile devices.
 
+![image](https://github.com/user-attachments/assets/9d2671c3-a3a7-4191-95aa-2419a757a256)
+
+
 A mobile-only button, "Read our story", was added to enhance user engagement.
+
 ![image](https://github.com/user-attachments/assets/ee7f5749-4937-4099-abca-5401f0cfd80d)
 
+
 A new text element, "More Happy Customers", was introduced to emphasize customer satisfaction.
+
 ![image](https://github.com/user-attachments/assets/67a404d9-c9b2-4687-9f45-691bb767947c)
 
+
 The testimonials section was updated with profile pictures to enhance credibility and visual appeal.
+
 ![image](https://github.com/user-attachments/assets/674db5b8-0993-435c-a96c-e76060cf5b39)
+
 
 ### Mascot
 A site mascot in the form of a cupcake was added. The mascot:
@@ -61,6 +70,7 @@ A site mascot in the form of a cupcake was added. The mascot:
  - Includes animations.
 
  - Displays a welcome message and call-to-action when hovered over.
+
 
 ![image](https://github.com/user-attachments/assets/403c1d7b-8257-4469-805c-8f83da541a29)
 
