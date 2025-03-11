@@ -117,20 +117,27 @@
     </section>
 
         
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-          <h2><i class="fa-solid fa-comments"></i> Customer Love</h2>
-          
-          <!-- Featured testimonial (larger on desktop) -->
-          <div class="featured-testimonial">
-            <div class="testimonial-image">
-              <img src="assets/profile-1.jpg" alt="James Wilson" class="profile-pic">
+    <section id="testimonials" class="bg-amber-100 py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-repeat opacity-10" style="background-image: url('assets/pattern.png');"></div>
+      
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-4xl text-center font-serif font-bold mb-12 relative">
+          <i class="fa-solid fa-comments text-pink-400 mr-3"></i> Customer Love
+          <span class="block absolute w-20 h-1 bg-pink-400 left-1/2 transform -translate-x-1/2 bottom-0 mt-2"></span>
+        </h2>
+        
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl relative overflow-hidden">
+          <div class="md:flex items-center">
+            <div class="md:w-1/4 flex justify-center mb-6 md:mb-0">
+              <div class="w-24 h-24 md:w-32 md:h-32">
+                <img src="assets/profile-1.jpg" alt="James Wilson" class="w-full h-full object-contain rounded-full border-3 border-pink-400 shadow-md transition-transform duration-300 hover:scale-105">
+              </div>
             </div>
-            <div class="testimonial-content">
-              <div class="quote">"Sweet Delights Bakery has become a staple in our family gatherings. Their sourdough bread and custom birthday cakes have made our celebrations truly special. The attention to detail and commitment to quality ingredients is evident in every bite!"</div>
-              <div class="author">
-                — James Wilson <span class="location">New York, NY</span>
-                <div class="rating">
+            <div class="md:w-3/4 md:pl-8">
+              <p class="italic text-lg md:text-xl mb-6 relative z-10">"Sweet Delights Bakery has become a staple in our family gatherings. Their sourdough bread and custom birthday cakes have made our celebrations truly special. The attention to detail and commitment to quality ingredients is evident in every bite!"</p>
+              <div class="font-medium text-gray-800">
+                — James Wilson <span class="text-gray-500 italic font-light">New York, NY</span>
+                <div class="text-yellow-400 mt-2">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -140,79 +147,77 @@
               </div>
             </div>
           </div>
-          
-
-          <!-- Mobile only heading -->
-          <h3 class="mobile-only-heading">More Happy Customers</h3>
-
-          
-          
-          <div class="testimonial-grid">
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-image">
-                  <img src="assets/profile-3.jpg" alt="Olivia Martinez" class="profile-pic">
-                </div>
-                <div class="testimonial-meta">
-                  <div class="author-name">Olivia Martinez</div>
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                  </div>
+          <div class="absolute bottom-0 right-0 text-9xl text-pink-100 opacity-50 pointer-events-none">&#8220;</div>
+        </div>
+        
+        <h3 class="md:hidden text-2xl text-center font-serif font-medium mb-6">More Happy Customers</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 mr-4 flex-shrink-0">
+                <img src="assets/profile-3.jpg" alt="Olivia Martinez" class="w-full h-full object-cover rounded-full border-2 border-pink-400">
+              </div>
+              <div>
+                <div class="font-medium text-gray-800">Olivia Martinez</div>
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
-              <div class="quote">"Their macarons are absolutely divine! Each one is a perfect little piece of heaven. I've tried many bakeries, but Sweet Delights consistently delivers the best quality and taste."</div>
             </div>
-            
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-image">
-                  <img src="assets/profile-4.jpg" alt="David Chen" class="profile-pic">
-                </div>
-                <div class="testimonial-meta">
-                  <div class="author-name">David Chen</div>
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="quote">"As someone with dietary restrictions, finding a bakery that can accommodate my needs while still creating delicious treats has been a game-changer. Thank you for your incredible gluten-free options!"</div>
-            </div>
-            
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-image">
-                  <img src="assets/profile-2.jpg" alt="Sofia Patel" class="profile-pic">
-                </div>
-                <div class="testimonial-meta">
-                  <div class="author-name">Sofia Patel</div>
-                  <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="quote">"I ordered a custom cake for my daughter's graduation and it exceeded all expectations. Not only was it stunning visually, but it tasted incredible. The entire party was raving about it!"</div>
-            </div>
+            <p class="italic">"Their macarons are absolutely divine! Each one is a perfect little piece of heaven. I've tried many bakeries, but Sweet Delights consistently delivers the best quality and taste."</p>
           </div>
-
-          <!-- Mobile only view all button -->
-          <div class="mobile-only-button">
-            <a href="#about" class="btn"><i class="fa-solid fa-cake-candles"></i>Read our story</a>
+          
+          <div class="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 mr-4 flex-shrink-0">
+                <img src="assets/profile-4.jpg" alt="David Chen" class="w-full h-full object-cover rounded-full border-2 border-pink-400">
+              </div>
+              <div>
+                <div class="font-medium text-gray-800">David Chen</div>
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="italic">"As someone with dietary restrictions, finding a bakery that can accommodate my needs while still creating delicious treats has been a game-changer. Thank you for your incredible gluten-free options!"</p>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 mr-4 flex-shrink-0">
+                <img src="assets/profile-2.jpg" alt="Sofia Patel" class="w-full h-full object-cover rounded-full border-2 border-pink-400">
+              </div>
+              <div>
+                <div class="font-medium text-gray-800">Sofia Patel</div>
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="italic">"I ordered a custom cake for my daughter's graduation and it exceeded all expectations. Not only was it stunning visually, but it tasted incredible. The entire party was raving about it!"</p>
           </div>
         </div>
-      </section>
-          
+        
+        <div class="md:hidden text-center mt-6">
+          <a href="#about" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition duration-300">
+            <i class="fa-solid fa-cake-candles mr-2"></i>Read our story
+          </a>
+        </div>
+      </div>
+    </section>
 
 
     <section id="contact" class="contact">
