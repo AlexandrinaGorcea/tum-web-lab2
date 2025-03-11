@@ -253,58 +253,7 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
   }
-  
-  /* Products Section */
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .product-card {
-    background-color: white;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-  }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .product-image {
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .product-card:hover .product-image img {
-    transform: scale(1.05);
-  }
-  
-  .product-card h3, .product-card p {
-    padding: 0 1.5rem;
-  }
-  
-  .product-card h3 {
-    margin-top: 1.5rem;
-  }
-  
-  .product-card p {
-    margin-bottom: 1.5rem;
-  }
-  
-  .center-btn {
-    text-align: center;
-  }
+
   
   /* Testimonials Section */
 
